@@ -1,0 +1,9 @@
+.social-media-icon {
+    display: flex;
+    font-size: 2rem;
+}
+
+.social-media-icon a{
+    display: block;
+    margin-right: 1.2rem;
+}
