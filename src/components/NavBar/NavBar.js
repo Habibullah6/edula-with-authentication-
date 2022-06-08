@@ -1,15 +1,17 @@
 import React from 'react';
 import { Container, Nav, Navbar } from 'react-bootstrap';
 import { NavLink } from 'react-router-dom';
-
-
-
+import useAuth from '../../context/useAuth';
 
 const NavBar = () => {
 const activeStyle = {
   fontWeight: 'bold',
   color: 'salmon'
 }
+
+const {user, handleSignOut} = useAuth()
+
+
 return (
     <Navbar collapseOnSelect expand="lg">
     <Container>
@@ -23,7 +25,11 @@ return (
         <Nav.Link as={NavLink} to='/home' activeStyle={activeStyle}>Home</Nav.Link>
         <Nav.Link as={NavLink} to='/about' activeStyle={activeStyle}>About</Nav.Link>
         <Nav.Link as={NavLink} to='/services' activeStyle={activeStyle}>Services</Nav.Link>
-        <Nav.Link as={NavLink} to='/contact' activeStyle={activeStyle}>Contact Us</Nav.Link>
+        <Nav.Link as={NavLink} to='/contact' activeStyle={activeStyle}>Contact us</Nav.Link>
+        {
+          user.displayName? <Nav.Link onClick={handleSignOut}> <span className='border border-success p-2'>Logout</span> </Nav.Link>:<Nav.Link as={NavLink} to='/login' activeStyle={activeStyle}>Sign in</Nav.Link>
+        }
+        <Nav.Link activeStyle={activeStyle}>{user.displayName}</Nav.Link>
       </Nav>
     </Navbar.Collapse>
     </Container>
