@@ -20,10 +20,11 @@ const SignIn = () => {
     const handleEmailPasswordLogIn = (e) => {
         e.preventDefault()
          handleEmailPasswordSignIn(email, password)
-         .then(result => {
-             setUser(result.user);
-             console.log(result.user);
-             alert('successfully log in')
+         .then((userCredential) => {
+            const user = userCredential.user;
+            setUser(user)
+            alert('successfully log in');
+            console.log(user);
          })
          .catch(error => {
              alert(error.message)

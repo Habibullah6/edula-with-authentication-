@@ -27,7 +27,7 @@ return (
         <Nav.Link as={NavLink} to='/services' activeStyle={activeStyle}>Services</Nav.Link>
         <Nav.Link as={NavLink} to='/contact' activeStyle={activeStyle}>Contact us</Nav.Link>
         {
-          user.displayName? <Nav.Link onClick={handleSignOut}> <span className='border border-success p-2'>Logout</span> </Nav.Link>:<Nav.Link as={NavLink} to='/login' activeStyle={activeStyle}>Sign in</Nav.Link>
+          user.email? <Nav.Link onClick={handleSignOut}> <span className='border border-success p-2'>Logout</span> </Nav.Link>:<Nav.Link as={NavLink} to='/login' activeStyle={activeStyle}>Sign in</Nav.Link>
         }
         <Nav.Link activeStyle={activeStyle}>{user.displayName}</Nav.Link>
       </Nav>

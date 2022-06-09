@@ -27,10 +27,9 @@ const handleEmailPasswordSignIn = (email, password) => {
 }
 
 const handleEmailVerify = () => {
+     console.log(auth.currentUser);
      sendEmailVerification(auth.currentUser)
-     .then(result => {
-         console.log(result);
-     })
+     .then(()=>console.log("verification send"))
 }
 
 

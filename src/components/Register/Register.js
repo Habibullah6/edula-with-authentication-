@@ -35,7 +35,7 @@ const Register = () => {
         emailValidation()
         handleRegister(email, password)
         .then(result => {
-            
+            console.log(result);
             setUser(result.user);
             handleEmailVerify()
         })
