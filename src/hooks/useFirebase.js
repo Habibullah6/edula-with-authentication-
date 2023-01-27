@@ -1,4 +1,4 @@
-import { createUserWithEmailAndPassword, getAuth, GoogleAuthProvider, onAuthStateChanged, sendEmailVerification, signInWithEmailAndPassword, signInWithPopup, signOut } from "firebase/auth";
+import { createUserWithEmailAndPassword, getAuth, GoogleAuthProvider, onAuthStateChanged, sendEmailVerification, signInWithEmailAndPassword, signInWithPopup, signOut, updateProfile } from "firebase/auth";
 import { useEffect, useState } from "react";
 import initializeAuthentication from "../Firebase/firebase.init";
 
@@ -48,9 +48,7 @@ useEffect(()=> {
         if(user) {
             setUser(user)
         }
-        else{
-            alert('user sign out')
-        }
+        
     })
 }, [])
 
@@ -63,7 +61,10 @@ handleRegister,
 handleEmailPasswordSignIn,
 user,
 handleSignOut,
-handleEmailVerify
+handleEmailVerify,
+updateProfile,
+auth
+
 
 }
 }

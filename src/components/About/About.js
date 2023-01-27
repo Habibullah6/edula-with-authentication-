@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import pic from '../../images/banner2.jpg'
+import pic from '../../images/team.jpg';
 const About = () => {
     return (
      <div className="container">

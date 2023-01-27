@@ -1,13 +1,13 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import useAuth from '../../context/useAuth';
 
 
 const Register = () => {
-    const {handleRegister, setUser, handleEmailVerify} = useAuth();
+    const {handleRegister, setUser, handleEmailVerify, updateProfile, auth} = useAuth();
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
-
+    const [name, setName] = useState('');
     const handleEmail =  (e) => {
         setEmail(e.target.value)
         
@@ -15,6 +15,15 @@ const Register = () => {
     const handlePassword = (e) => {
         setPassword(e.target.value)
     }
+    const handleNameChange = (e) => {
+        setName(e.target.value)
+    }
+
+    const setUserName = () => {
+        updateProfile(auth.currentUser, {displayName: name})
+        .then(result => {})
+    }
+
 
     const emailValidation = () => {
         const regEx = /[a-zA-Z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,8}(.[a-z{2,8}])?/g;
@@ -37,7 +46,8 @@ const Register = () => {
         .then(result => {
             console.log(result);
             setUser(result.user);
-            handleEmailVerify()
+            handleEmailVerify();
+            setUserName()
         })
         .catch(error => {
             alert(error.message)
@@ -51,12 +61,16 @@ const Register = () => {
                 <p>please register: </p>
                 <form onSubmit={handleRegistration}>
                     <div className="mb-2">
+                        <label htmlFor="exampleInputName" className="form-label">Name</label>
+                        <input onBlur={handleNameChange} type="text" className="form-control" id='exampleInputName'/>
+                    </div>
+                    <div className="mb-2">
                         <label htmlFor="exampleInputEmail1" className="form-label">Email address</label>
-                        <input onBlur={handleEmail} type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
+                        <input onBlur={handleEmail} type="email" className="form-control" id='exampleInputEmail1'/>
                     </div>
                     <div className="mb-3">
                         <label htmlFor="exampleInputPassword1" className="form-label">Password</label>
-                        <input type="password" onBlur={handlePassword} className="form-control" id="exampleInputPassword1" />
+                        <input type="password" onBlur={handlePassword} className="form-control" id='exampleInputPassword1'/>
                     </div>
                     <button type="submit" className="btn btn-primary">register</button>
                 </form><br/>

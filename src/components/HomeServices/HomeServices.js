@@ -1,7 +1,7 @@
 import React from 'react';
 import { Row } from 'react-bootstrap';
 import useServices from '../../hooks/useServices';
-import homeImage from '../../images/homeService.jpg'
+import homeImage from '../../images/student2.jpg';
 import HomeServiceCard from '../HomeServiceCard/HomeServiceCard';
 const HomeServices = () => {
     const [services] = useServices();

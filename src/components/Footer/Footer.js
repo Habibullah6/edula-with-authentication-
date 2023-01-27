@@ -1,7 +1,7 @@
 import React from 'react';
+import { Button, FormControl, InputGroup } from 'react-bootstrap';
+import { FaCopyright, FaFacebook, FaInstagram, FaPinterest, FaTelegramPlane, FaWhatsapp } from "react-icons/fa";
 import './Footer.css';
-import {FaFacebook, FaWhatsapp, FaPinterest, FaInstagram, FaCopyright, FaTelegramPlane} from "react-icons/fa";
-import { FormControl, InputGroup, Button } from 'react-bootstrap';
 
 
 const Footer = () => {
@@ -19,32 +19,30 @@ const Footer = () => {
            <a href="https://www.facebook.com"><FaPinterest/></a>
        </div> <br/>
        <small>Copyright <FaCopyright/> 2022 by Habib. </small> <br/>
-       <small>All Rights Reserved.</small>
+       <small>All Rights Reserved.</small> 
     </div>
     <div className="col-xl-3 col-md-6">
+      <br/>
       <div>
       <h5 className='fw-bold'>DHAKA</h5>
-      <small>88/2 Mirpur 12 pallabi.</small> <br/>
-      <small>Dhaka 1216.</small> <br />
+      <small>88/2 Dhanmondi, Dhaka-1207</small> 
       
-      </div><br />
-      <div>
+      </div> <br/>
+      <div> 
         <h5 className='fw-bold'>CHITTAGONG</h5>
-        <small>28 Golden Gate.</small><br />
-        <small>Chittagong Bangladesh.</small>
-      </div>
+        <small>Port Building Chittagong 4100</small>
+      </div> <br/>
     </div>
     <div className="col-xl-3 col-md-6">
       <div>
-        <h5 className='fw-bold'>WORKING WITH US</h5>
-        <small>nomanhabibullah65@gmail.com</small> <br />
-        <small>nomansk0@gmail.com</small>
-      </div><br />
+        <h5 className='fw-bold'>SUPPORT</h5>
+        <small>nomanhabibullah65@gmail.com</small> 
+        
+      </div> <br/>
       <div>
         <h5 className='fw-bold'>PHONE</h5>
-        <small>+88 963250145</small><br />
-        <small>+88 963278966</small>
-      </div>
+        <small>+88-01761461800</small>
+      </div><br/>
     </div>
     <div className="col-xl-3 col-md-6">
       <h5 className='fw-bold'>STAY IN TOUCH</h5>
@@ -53,7 +51,7 @@ const Footer = () => {
       placeholder="Enter Email"
       aria-label="Enter Email"
       aria-describedby="basic-addon2"/>
-      <Button variant="outline-success" id="button-addon2" style={{fontSize: '1.6rem'}}><FaTelegramPlane/></Button>
+      <Button className='btn btn-danger' id="button-addon2" style={{fontSize: '1.6rem'}}><FaTelegramPlane/></Button>
       </InputGroup>
     </div>
    </div>

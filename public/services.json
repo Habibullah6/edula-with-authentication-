@@ -3,41 +3,41 @@
         "course": "Javascript Course",
         "description": "Asiatic glassfish coolie loach sprat pelican gulper, archerfish loosejaw, Blind goby. Southern grayling grunter, orange roughy",
         "fee": "$120",
-        "img": "http://softcoders.net/demo/html/edula/assets/images/courses/1.jpg"
+        "img": "https://i.ibb.co/qB5rrpH/javascript-meta-1652702081069-2.jpg"
     },
 
     {
         "course": "Business & Management",
         "description": "Asiatic glassfish coolie loach sprat pelican gulper, archerfish loosejaw, Blind goby. Southern grayling grunter, orange roughy",
         "fee": "$220",
-        "img": "http://softcoders.net/demo/html/edula/assets/images/courses/2.jpg"
+        "img": "https://i.ibb.co/tx79vdg/business-management.jpg"
     },
 
     {
         "course": "Social Economics Courses",
         "description": "Asiatic glassfish coolie loach sprat pelican gulper, archerfish loosejaw, Blind goby. Southern grayling grunter, orange roughy",
         "fee": "$90",
-        "img": "http://softcoders.net/demo/html/edula/assets/images/courses/3.jpg"
+        "img": "https://i.ibb.co/brxFMgV/social-economics.jpg"
     },
 
     {
         "course": "Web Design Courses",
         "description": "Asiatic glassfish coolie loach sprat pelican gulper, archerfish loosejaw, Blind goby. Southern grayling grunter, orange roughy",
         "fee": "$240",
-        "img": "http://softcoders.net/demo/html/edula/assets/images/courses/4.jpg"
+        "img": "https://i.ibb.co/876xLnR/Web-Designing-Course-Syllabus.jpg"
     },
 
     {
         "course": "Learn Python Course",
         "description": "Asiatic glassfish coolie loach sprat pelican gulper, archerfish loosejaw, Blind goby. Southern grayling grunter, orange roughy",
         "fee": "$340",
-        "img": "http://softcoders.net/demo/html/edula/assets/images/courses/5.jpg"
+        "img": "https://i.ibb.co/3hVGWHT/maxresdefault.jpg"
     },
 
     {
         "course": "Master and Make PHP",
         "description": "Asiatic glassfish coolie loach sprat pelican gulper, archerfish loosejaw, Blind goby. Southern grayling grunter, orange roughy",
         "fee": "$130",
-        "img": "http://softcoders.net/demo/html/edula/assets/images/courses/6.jpg"
+        "img": "https://i.ibb.co/r23Qn7J/2-become-a-php-backend-developer-what-courses-to-take.jpg"
     }
 ]
