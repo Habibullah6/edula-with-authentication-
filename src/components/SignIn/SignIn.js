@@ -8,7 +8,9 @@ const SignIn = () => {
     const {handleEmailPasswordSignIn, setUser, handleGoogleSignIn} = useAuth();
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
-
+    
+    
+    
     const handleEmail =  (e) => {
         setEmail(e.target.value)
         
@@ -32,9 +34,11 @@ const SignIn = () => {
 
     }
     
-    let history = useHistory();
-    let location = useLocation();
+    const history = useHistory();
+    const location = useLocation();
     const redirect_Uri = location.state?.from || '/home';
+
+    
     
     const signInUsingGoogle = () => {
         handleGoogleSignIn()
@@ -47,6 +51,8 @@ const SignIn = () => {
         })
     }
 
+
+   
 
     return (
         <div className='d-flex justify-content-center'>

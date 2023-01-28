@@ -3,14 +3,10 @@ import { Redirect, Route } from 'react-router-dom';
 import useAuth from '../../context/useAuth';
 
 const PrivateRoute = ({children, ...rest }) => {
-    const {user, loading, setLoading} = useAuth();
+    const {user} = useAuth();
 
     
-    
-    if(loading){
-      return <p className='text-center'>Loading........</p>
-    }
-    
+   
     
     
     
@@ -18,9 +14,9 @@ const PrivateRoute = ({children, ...rest }) => {
       <Route
       {...rest}
       render={({ location }) =>
-        user?.displayName ? (
+        user.email ? 
           children
-        ) : (
+         : 
           <Redirect
             to={{
               pathname: "/login",
@@ -28,7 +24,7 @@ const PrivateRoute = ({children, ...rest }) => {
               
             }}
           />
-        )
+        
       }
     />
     );

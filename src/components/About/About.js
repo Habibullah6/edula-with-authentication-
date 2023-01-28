@@ -10,6 +10,7 @@ const About = () => {
             </div>
             <div className="col-md-7 p-3" style={{textAlign: 'justify'}}>
                <h3>Creative Team that Gets Excited About</h3>
+               <hr/>
                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi laborum accusantium sit laudantium, incidunt quas ipsa perspiciatis eaque itaque et placeat ex illo. Sed corrupti maiores quod, expedita dolore quae dolores error iure placeat commodi, aliquid nihil magni beatae! Deserunt? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni veniam ut non. Nostrum et laboriosam culpa ullam facere est voluptate incidunt labore quia possimus, officia, ad dolorum illo quis ipsum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid doloremque maxime hic laboriosam dignissimos officiis nihil ad obcaecati? Quaerat facilis.</p>
                <NavLink to='*'><button className='btn btn-danger'>Learn More</button></NavLink>
             </div>

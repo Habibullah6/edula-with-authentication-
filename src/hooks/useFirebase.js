@@ -50,6 +50,7 @@ const handleSignOut = () => {
 
 useEffect(()=> {
     setLoading(true)
+  
     onAuthStateChanged(auth, (user)=> {
         if(user) {
             setUser(user)
